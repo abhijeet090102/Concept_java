@@ -20,6 +20,9 @@ class Quadri{
 	void area(){
 		System.out.println("Area of the figure "+l*b);
 	}
+	void area(int am){
+	  System.out.println("The method overloading the passing value is " +am);
+	}
 }
 class Quadrilateral{
 	public static void main(String[] args){
@@ -27,5 +30,6 @@ class Quadrilateral{
 		Quadri ob1 = new Quadri(20);
 		Quadri ob2 = new Quadri(ob1);
 		ob.area();
+		ob.area(40);
 	}
 }
